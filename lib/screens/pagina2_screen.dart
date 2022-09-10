@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 class Pagina2Screen extends StatelessWidget {
   const Pagina2Screen({Key? key}) : super(key: key);
 
+//---------------- Pantalla ------------------
   @override
   Widget build(BuildContext context) {
     return Scaffold(
