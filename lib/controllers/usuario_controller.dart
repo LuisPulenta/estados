@@ -22,7 +22,7 @@ class UsuarioController extends GetxController {
 
   void agregarProfesion(String profesion) {
     usuario.update((val) {
-      val!.profesiones = [...val!.profesiones, profesion];
+      val!.profesiones = [...val.profesiones, profesion];
     });
   }
 }
