@@ -21,7 +21,7 @@ class Pagina1Screen extends StatelessWidget {
                   Provider.of<UsuarioService>(context, listen: false);
               usuarioService.removerUsuario();
             },
-            icon: Icon(Icons.exit_to_app),
+            icon: const Icon(Icons.exit_to_app),
           ),
         ],
       ),
