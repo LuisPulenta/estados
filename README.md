@@ -9,5 +9,6 @@ Para ir a una rama existente
     git checkout rama-singleton
 
 Para guardar cambios
+    git add
     git commit -m "Fin Singleton"
 
