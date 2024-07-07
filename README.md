@@ -7,3 +7,7 @@ Para crear e ir a una nueva rama
 Para ir a una rama existente
     git checkout master
     git checkout rama-singleton
+
+Para guardar cambios
+    git commit -m "Fin Singleton"
+
