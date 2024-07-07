@@ -39,7 +39,7 @@ class Pagina2Screen extends StatelessWidget {
                 child: const Text('Cambiar Edad',
                     style: TextStyle(color: Colors.white)),
                 onPressed: () {
-                  usuarioService.cambiarEdad;
+                  usuarioService.cambiarEdad(55);
                 }),
             MaterialButton(
                 color: Colors.blue,
