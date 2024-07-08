@@ -16,7 +16,7 @@ class Pagina1Screen extends StatelessWidget {
         centerTitle: true,
         actions: [
           IconButton(
-            icon: Icon(Icons.exit_to_app),
+            icon: const Icon(Icons.exit_to_app),
             onPressed: () => context.read<UsuarioCubit>().borrarUsuario(),
           )
         ],
@@ -41,15 +41,13 @@ class BodyScaffold extends StatelessWidget {
     return BlocBuilder<UsuarioCubit, UsuarioState>(builder: (_, state) {
       switch (state.runtimeType) {
         case UsuarioInitial:
-          return Center(
+          return const Center(
             child: Text('No hay información del usuario'),
           );
-          break;
         case UsuarioActivo:
           return InformacionUsuario((state as UsuarioActivo).usuario);
-          break;
         default:
-          return Center(child: Text('Estado no reconocido'));
+          return const Center(child: Text('Estado no reconocido'));
       }
 
       // if (state is UsuarioInitial) {
